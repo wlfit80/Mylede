@@ -201,6 +201,8 @@ jobs:
 
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+          rm -rf feeds/xiaoqingfeng/luci-app-https-dns-proxy
+          rm package/feeds/xiaoqingfeng/luci-app-https-dns-prox
           
       - name: SSH connection to Actions
         uses: P3TERX/debugger-action@master
